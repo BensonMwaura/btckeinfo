@@ -1,0 +1,35 @@
+<article class="padded fadeInDown animated">
+  <div class="row padded">
+    <section about-directive></section>
+    <hr></hr>
+    <section class="row padded black box">
+      <div class="padded bounceInDown animated">
+        <h1 class="museo-slab mobile">Blog Articles</h1>
+      </div>
+    </section>
+  </div>
+  <hr></hr>
+  <div class="row page gap-top page">
+    <div class="three centered fourths">
+      <div class="padded">
+        <div class="row" ng-repeat="blog in blogData">
+          <div class="row">
+            <div class="three fourths">
+              <a href="#!/Blogs/:{{blog.id}}" class="noicon">
+                <h3 class="museo-slab">{{ blog.title }}</h3>
+              </a>
+            </div>
+            <div class="one fourth">
+              <span><time class="timeago" datetime="{{ blog.date_posted }}">{{ blog.date_posted | date:'medium'}}</time></span>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <!-- <p>{{ blog.desc | limitTo:5 }}</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

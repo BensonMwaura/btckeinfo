@@ -1,0 +1,37 @@
+<article class="padded fadeInUp animated">
+  <div class="row padded" itemscope itemtype="http://schema.org/Organization">
+    <div about-directive></div>
+    <hr></hr>
+    <div class="three centered fifths">
+      <a href="#/" class="noicon" title="Bitcoinkenya Info">
+        <img src="assets/images/Bitcoin_Kenya.png" alt="BitcoinkenyaInfo" itemprop="logo" />
+      </a>
+      <h4 class="quicksand mobile">Kenya's Bitcoin and Cryptocurrency Portal</h4>
+    </div>
+  </div>
+  <hr></hr>
+  <div class="row page">
+    <section class="three fifths padded bounceInDown animated">
+      <h3 class="museo-slab"><a href="#!/News" class="green button noicon" rel="next">
+        <i class="mdi mdi-newspaper"></i>News</a> | Welcome</h3>
+      <ul class="padded centered">
+        <li class="gap-top black box" ng-repeat="news in data.news | limitTo:5">
+          <a href="#!/News/:{{news.id}}" class="noicon">
+            <h3>{{ news.title }}</h3></a>
+          <span><time class="timeago" datetime="{{news.date_posted}}">{{ news.date_posted}}</time></span>
+        </li>
+      </ul>
+    </section>
+    <aside class="two fifth padded charcoal box bounceInLeft animated">
+      <h3 class="museo-slab"><a href="#!/Blogs" class="green button noicon" rel="next">
+        <i class="mdi mdi-blogger"></i>Blogs</a> | Blog Highlights</h3>
+      <ul class="padded centered">
+        <li class="gap-top white box" ng-repeat="blog in data.articles | limitTo:3">
+          <a href="#!/Blogs/:{{blog.id}}" class="noicon">
+            <h3>{{ blog.title }}</h3></a>
+            <span><time class="timeago" datetime="{{ blog.date_posted }}">{{ blog.date_posted}}</time></span>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</article>

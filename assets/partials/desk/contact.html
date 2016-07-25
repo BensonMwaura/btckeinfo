@@ -1,0 +1,50 @@
+<article class="padded fadeInUp animated">
+  <div class="row padded" itemscope itemtype="http://schema.org/Organization">
+    <div about-directive></div>
+    <hr></hr>
+    <section class="row padded black box">
+      <div class="padded bounceInDown animated">
+        <h1 class="museo-slab mobile">Contact Us</h1>
+      </div>
+    </section>
+  </div>
+  <hr></hr>
+  <div class="row padded page">
+    <div class="row">
+      <form name="contactForm" action="#" method="post">
+        <fieldset>
+          <div class="row">
+            <p class="dismissible success message" ng-show="alertMsg">{{ message }}</p>
+          </div>
+          <div class="row">
+            <div class="one half padded">
+              <label for="name" class="museo-slab">Your Name</label>
+              <input id="name" type="text" name="name" placeholder="Your Name" required="" autofocus="" ng-model="contact.name"/>
+            </div>
+            <div class="one half padded">
+              <label for="email" class="museo-slab">Your Email</label>
+              <input id="email" type="email" name="email" placeholder="you@email.com" required="" ng-model="contact.email"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one whole padded">
+              <label for="subject" class="museo-slab">Subject</label>
+              <input id="subject" type="text" name="subject" placeholder="What's the subject?" required="" ng-model="contact.subject"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one whole padded">
+              <label for="message" class="museo-slab">Message</label>
+              <textarea id="message" name="message" rows="8" cols="40" placeholder="Tell us what you have in mind..." required="" ng-model="contact.message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one whole padded">
+              <button type="button" name="submit" class="green" ng-disabled="contactForm.$invalid" ng-click="sendContact()">SEND</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</article>

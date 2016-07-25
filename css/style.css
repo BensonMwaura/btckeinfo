@@ -1,0 +1,33 @@
+/* bitcoinkenya.info css */
+/* import standard layout styling sheets */
+@import url('groundwork.css');
+@import url('materialdesignicons.css');
+
+i {padding-right: 7px;}
+h4 { text-align: center;}
+p.readable { line-height: 2em; font-size: 1.2em;}
+ul { list-style: none;}
+footer {position: fixed; bottom: 0;}
+.page {min-height: 325px;}
+ul.list, ol.list{ line-height: 2em; font-size: 1.2em; padding-left: 20px;}
+
+@media (max-width: 480px){
+  .padded { padding: 2px 7px 2px 7px;}
+  .box div > h1 { font-size: 1.4em; }
+  .box div.padded { padding: 1px 1px 1px 1px;}
+  .row div a > h3 { font-size: 1.1em; }
+  .row div > p, div > a { font-size: 1em; }
+  .about section > span { font-size: 0.83em; }
+  .page section > h3, aside > h3, ul li a> h3, h3 { font-size: 1.1em;}
+  .quicksand { font-size: 12px; }
+  .timeago { font-size: 11px;}
+  .tabs li { font-size: 12px; }
+  .button, button {font-size: 11px; }
+  ul.list, ol.list { line-height: 1.1em; font-size: 0.8em; padding-left: 0px;}
+  ul.list li, ol.list li { text-align: left;}
+  ul.list li > a, ol.list li > a { color: black;}
+  p.readable { line-height: 1.1em; font-size: 0.8em;}
+  form label { font-size: 11px;}
+  form input, textarea { font-size: 12px;}
+  footer section p { font-size: 11px;}
+}

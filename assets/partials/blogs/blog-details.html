@@ -1,0 +1,37 @@
+<article class="padded fadeInUp animated">
+  <div class="row padded">
+    <section about-directive></section>
+  </div>
+  <hr></hr>
+  <div class="row padded">
+    <div class="three fifths">
+      <h3 class="zero museo-slab">Blog Details</h3>
+      <p class="quicksand">Bitcoin Kenya Information Portal</p>
+    </div>
+    <div class="two fifths align-right-ipad align-right-desktop">
+      <a href="#!/Blogs" class="blue button" rel="prev">Back to Blogs List</a>
+    </div>
+  </div>
+  <hr></hr>
+  <div class="row page gap-top page">
+    <div class="three centered fourths">
+      <div class="padded">
+       <div class="row">
+          <div class="row">
+            <div class="three fourths">
+                <h3 class="museo-slab">{{ blogsDetail.title }}</h3>
+            </div>
+            <div class="one fourth">
+              <span><time class="timeago" datetime="{{ blogsDetail.date_posted}}">{{ blogsDetail.date_posted | date:'medium'}}</time></span>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <p>{{ blogsDetail.desc}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

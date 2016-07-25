@@ -1,0 +1,35 @@
+<article class="padded fadeInDown animated">
+  <div class="row padded">
+    <div about-directive></div>
+    <hr></hr>
+    <section class="row padded black box">
+      <div class="padded bounceInDown animated">
+        <h1 class="museo-slab mobile">News</h1>
+      </div>
+    </section>
+  </div>
+  <hr></hr>
+  <div class="row page gap-top page">
+    <div class="three centered fourths">
+      <div class="padded">
+        <div class="row" ng-repeat="news in newsData">
+          <div class="row">
+            <div class="three fourths">
+              <a href="#!/News/:{{news.id}}" class="noicon">
+                <h3 class="museo-slab">{{ news.title }}</h3>
+              </a>
+            </div>
+            <div class="one fourth">
+              <span><time class="timeago" datetime="{{ news.date_posted}}">{{ news.date_posted | date:'medium'}}</time></span>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <!-- <p>{{ news.desc | limitTo:5 }}</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

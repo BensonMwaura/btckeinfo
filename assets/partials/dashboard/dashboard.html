@@ -1,0 +1,46 @@
+<article class="padded fadeInDown animated">
+  <div class="row padded">
+    <section about-directive></section>
+    <hr></hr>
+  </div>
+  <div class="row padded">
+    <h3>Dashboard | Post - {{ txt }}</h3>
+  </div>
+  <div class="row padded page">
+    <div class="three fifths padded">
+      <div class="row padded">
+        <form name="editorForm" action="#" method="post">
+          <fieldset>
+            <div class="row">
+              <div class="one whole padded">
+                <label for="title" class="museo-slab">Title</label>
+                <input id="title" type="text" name="title" placeholder="Title" required="" autofocus="" ng-model="article.title"/>
+              </div>
+              <div class="one whole padded">
+                <label for="parOne" class="museo-slab">Content</label>
+                <textarea id="parOne" name="parOne" rows="8" cols="40" required="" ng-model="article.desc"></textarea>
+              </div>
+              <div class="one whole padded">
+                <a href="" class="button green" ng-disabled="editorForm.$invalid" ng-click="postEditor(article)">SAVE</a>
+                <a href="" class="button red" ng-click="cancel()">CANCEL</a>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="two fifths padded hide-on-mobile hide-on-ipad">
+      <div class="row padded">
+        <div class="row black box">
+          <h3 class="museo-slab">Preview</h3>
+          <div class="row">
+            <p class="museo-slab">{{ article.title }}</p>
+          </div>
+          <div class="row">
+            <p>{{ article.desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

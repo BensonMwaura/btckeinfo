@@ -1,0 +1,18 @@
+{
+  "news": [
+    { "id": "NWS100", "title": "Kenyan Firm Accepts Bitcoin payments",
+      "date_posted": "2016-06-06 08:00:00",
+      "desc": "It is progresive news happening from"},
+    { "id": "NWS101", "title": "Bitcoin Rallies To Higher Value",
+      "date_posted": "2016-06-09 08:00:00",
+      "desc": "It is growing in leaps and bounds, well maybe just small leaps.."}
+  ],
+  "articles": [
+    { "id": "ART100", "title": "Kenyan Firm Accepts Bitcoin payments",
+      "date_posted": "2016-06-06 08:00:00",
+      "desc": "It is progresive news happening from"},
+    { "id": "ART101", "title": "Bitcoin Rallies To Higher Value",
+      "date_posted": "2016-06-09 08:00:00",
+      "desc": "It is growing in leaps and bounds, well maybe just small leaps.."}
+  ]
+}

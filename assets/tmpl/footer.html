@@ -1,0 +1,10 @@
+<div class="row small-tablet">
+  <div class="three fifths padded">
+    <section><p class="museo-slab">Copyright &copy; {{ currYear.year }} Bitcoin Kenya. A product of
+    <span class="orange"><a href="http://www.umati.io/">Umati Blockchain Limited</a>.</span></p></section>
+  </div>
+  <div class="two fifths padded border-left hide-on-mobile">
+    <section><i class="mdi mdi-currency-btc red"></i><span>Current BTC Price =</span>
+    <span>{{btcPrice.price | currency}} ~ {{btcPrice.price * 100 | currency: 'KES '}}</span></section>
+  </div>
+</div>

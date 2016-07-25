@@ -1,0 +1,36 @@
+<article class="padded fadeInDown animated">
+  <div class="row padded" itemscope itemtype="http://schema.org/Organization">
+    <div about-directive></div>
+    <hr></hr>
+    <section class="row padded black box">
+      <div class="padded bounceInDown animated">
+        <h1 class="museo-slab mobile">Login</h1>
+      </div>
+    </section>
+  </div>
+  <div class="row padded page">
+    <div class="row">
+      <form name="loginForm" action="#" method="post">
+        <fieldset>
+          <div class="row">
+            <p class="dismissible error message" ng-show="alertMsg">{{ message }}</p>
+          </div>
+          <div class="row">
+            <div class="one half padded">
+              <label for="loginMail"></label>
+              <input id="loginMail" type="email" name="loginMail" placeholder="your@email.com" ng-model="user.loginMail" required="" autofocus=""/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one half padded">
+              <label for="loginPass"></label>
+              <input id="loginPass" type="password" name="loginPass" placeholder="your password" ng-model="user.loginPass" required=""/>
+              <hr></hr>
+              <button type="button" name="login" class="green" ng-disabled="loginForm.$invalid" ng-click="loginUser(user)">LOGIN</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</article>

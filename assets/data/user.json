@@ -1,0 +1,6 @@
+[
+  {"email" : "test@test.com", "password": "testpass", "member" : "admin"},
+  {"email" : "abel@test.com", "password": "abelpass", "member" : "admin"},
+  {"email" : "john@btckeinfo.com", "password": "johnpass", "member" : "editor"},
+  {"email" : "macy@btckeinfo.com", "password": "macypass", "member" : "editor"}
+]
